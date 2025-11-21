@@ -1,0 +1,115 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #4337de;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar_img {
+    width: 50%;
+}
+
+.navbar_links {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar_links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar_links a:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: inherit;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    float: none;
+    color: darkslategray;
+    font-weight: 700;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    color: black;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f7f7f7;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.image {
+    width: 14.063rem;
+    height: 12.500rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card button {
+    background-color: cornflowerblue;
+    color: darkslategray;
+    border: 2px solid darkslategrey;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.card button:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}

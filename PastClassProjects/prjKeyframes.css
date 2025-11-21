@@ -1,0 +1,55 @@
+html,
+body {
+    margin: 0;
+}
+
+.banner {
+    animation: fadeSlide 4s ease-out 2s;
+    animation-iteration-count:infinite;
+    background-color: #4337de;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banner__content {
+    padding: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.banner__text {
+    flex-grow: 1;
+    line-height: 1.4;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.banner__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.banner__text,
+.banner__close > span {
+    color: whitesmoke;
+}
+
+@keyframes fadeSlide {
+    0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+    filter: blur(0px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translate(10px, -5px) scale(0.95);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(20px, 10px) scale(0.8);
+    filter: blur(5px);
+  }
+}

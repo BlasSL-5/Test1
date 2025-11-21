@@ -1,0 +1,41 @@
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    overflow: hidden;
+}
+
+.my-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-150vw, -50%);
+    animation: slideIn 10s forwards ease-out;
+    animation-iteration-count: infinite;
+    text-align: center;
+    z-index: 1000;
+    width: 200px; /* Sets the width of the box */
+    height: 100px; /* Sets the height of the box */
+    background-color: white; /* Sets the background color */
+    border: 5px solid brown; /* Adds a border (width, style, color) */
+    padding: 15px; /* Adds space between content and border */
+    margin: 20px; /* Adds space outside the border, separating it from other elements */
+    border-radius: 8px; /* Rounds the corners of the box */
+    box-shadow: 3px 3px 5px rgba(46, 21, 0, 0.493); /* Adds a subtle shadow */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translate(-75vw, -50%) scale(0.8);
+        opacity: 0;
+        }
+    50% {
+        opacity: 0.75;
+        }
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,117 @@
+/*banner layout*/
+.banner {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(141, 2, 29), black);
+    color: whitesmoke;
+    text-align: center;
+    animation: fadeUp 10s forwards ease-out;
+    animation-iteration-count: infinite;
+}
+
+/*banner content*/
+.banner__content {
+    max-width: 600px;
+    padding: 0 5vw;
+}
+
+/*text styling*/
+.banner h1 {
+    font-size: 5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+.banner h2 {
+    font-size: 5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+#special-word {
+    font-family: "Sirivennela", sans-serif;
+    font-size: 8vw;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.banner p {
+    font-size: 3vw;
+}
+
+/*button*/
+.banner button {
+    background-color: rgb(4, 49, 4);
+    color: whitesmoke;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 1s ease, background-color 1s ease;
+}
+
+.banner button:hover {
+    background-color: rgb(8, 65, 8);
+    transform: scale(1.05);
+}
+
+/*animation*/
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*responsive design*/
+@media (max-width:768px) {
+    .banner h1 {
+        font-size: 8vw;
+    }
+
+    .banner h2 {
+        font-size: 8vw;
+    }
+
+    #special-word {
+        font-size: 10vw;
+    }
+
+    .banner p {
+        font-size: 5vw;
+    }
+
+    .banner button {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        flex-direction: column;
+        padding: 10vh 5vw;
+    }
+
+    .banner h1 {
+        font-size: 10vw;
+    }
+
+    #special-word {
+        font-size: 10vw;
+    }
+
+    .banner p {
+        font-size: 5vw;
+    }
+}
